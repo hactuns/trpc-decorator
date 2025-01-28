@@ -1,3 +1,1 @@
-**@serverless-hooks**
-
-Create a reuseable method for vercel serverless function
+**@trpc-decorator**

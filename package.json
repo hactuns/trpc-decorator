@@ -1,0 +1,46 @@
+{
+  "name": "trpc-decorator",
+  "version": "1.0.0",
+  "description": "Class-style declaration for tRPC",
+  "keywords": [
+    "trpc",
+    "decorator"
+  ],
+  "homepage": "https://github.com/hactuns/trpc-decorator",
+  "bugs": {
+    "url": "https://github.com/hactuns/trpc-decorator/issues"
+  },
+  "author": "Hactuns<khactuans.tran@gmail.com>(https://hactuns.me)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hactuns/trpc-decorator.git"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "ci": "yarn check-format && yarn check-exports && yarn build"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.0.0",
+    "node": ">= 14"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.16.4",
+    "@types/node": "^22.7.5",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {}
+}
